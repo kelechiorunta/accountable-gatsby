@@ -4,11 +4,11 @@ import Link from "gatsby-link"
 const GetStartedButton = () => {
   return (
     <Link
-      className="bg-theme block rounded-lg px-6 py-3 text-white font-medium hidden lg:inline-block lg:flex absolute right-0 mr-10 w-48"
+      className="bg-theme rounded-lg px-6 py-3 text-white font-medium hidden lg:inline-block absolute right-0 mr-10 w-48"
       to="/get-started"
     >
       <span>Get Started</span>
-      <div class="absolute right-0 mr-6">
+      <div class="absolute right-0 top-0 mt-3 mr-6">
         <svg
           width="24"
           height="24"
