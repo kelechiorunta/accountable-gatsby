@@ -72,6 +72,11 @@ const HomePage = () => {
           </div>
         </div>
       </main>
+      <footer class="px-6 sm:px-12 lg:px-32 py-4 lg:py-8 flex flex-wrap items-center absolute bottom-0 w-screen">
+        <p class="text-tertiary text-lg">
+          Accountable.org.ng &copy; 2020. All Rights Reserved.
+        </p>
+      </footer>
     </Layout>
   )
 }
