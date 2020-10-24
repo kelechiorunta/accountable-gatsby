@@ -11,11 +11,9 @@ A complete human rights project built with React.
 ## Dependencies
 
 <ul>
-  <li>React-Bootstrap</li>
   <li>Formik</li>
   <li>Yup</li>
   <li>Axios</li>
-  <li>GSAP (GreenSocket)</li>
 </ul>
 
 ## CSS
