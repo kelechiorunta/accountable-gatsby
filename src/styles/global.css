@@ -21,3 +21,22 @@ body {
   color: rgba(0, 0, 0, 0.9);
   letter-spacing: -0.06em;
 }
+
+.theme-nav {
+  transition: left 0.3s;
+  left: 50px;
+}
+
+.theme-nav-open {
+  left: 3rem;
+}
+
+.theme-nav-close {
+  left: -75%;
+}
+
+@media only screen and (min-width: 1028px) {
+  .theme-nav {
+    left: auto;
+  }
+}
