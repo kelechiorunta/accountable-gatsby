@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  font: 1.125rem "DM Sans", Arial;
+  color: rgba(0, 0, 0, 0.9);
+  letter-spacing: -0.06em;
+}
