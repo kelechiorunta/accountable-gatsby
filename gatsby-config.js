@@ -7,6 +7,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-postcss`,
+    `gatsby-plugin-htaccess`,
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
