@@ -22,6 +22,23 @@ body {
   letter-spacing: -0.06em;
 }
 
+.theme-hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.theme-hero:after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 1300px;
+  height: 782px;
+  right: -450px;
+  bottom: -225px;
+  background-image: url(../images/bg.png);
+  background-repeat: no-repeat;
+}
+
 .theme-nav {
   transition: left 0.3s;
   left: 50px;
