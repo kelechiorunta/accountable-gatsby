@@ -5,7 +5,7 @@ import Link from "gatsby-link"
 const HomePage = () => {
   return (
     <Layout>
-      <main className="landing-screen-bg flex h-full items-center px-6 sm:px-12 lg:px-32 z-0">
+      <main className="theme-hero flex h-full items-center px-6 sm:px-12 lg:px-32 z-0">
         <div className="w-full md:w-9/12 lg:w-9/12 xl:w-8/12 z-10">
           <h1 className="text-theme mb-2 text-3xl sm:text-5xl font-medium leading-none tracking-tightest">
             Accountable.org.ng
