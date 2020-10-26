@@ -5,8 +5,6 @@ import Container from "../layout/container"
 import Caption from "../components/typography/caption"
 import Summary from "../components/typography/summary"
 
-import ArrowIcon from "../components/icons/arrow-icon"
-
 import TextGroup from "../components/form-groups/text"
 import EmailGroup from "../components/form-groups/email"
 import SelectGroup from "../components/form-groups/select"
@@ -15,7 +13,10 @@ import MultiLineGroup from "../components/form-groups/multiline"
 import NumberGroup from "../components/form-groups/number"
 import FileGroup from "../components/form-groups/file"
 
+import ArrowIcon from "../components/icons/arrow-icon"
+
 import Button from "../components/controls/button"
+import Divider from "../components/typography/divider"
 
 const offence = {
   theft: "Theft",
@@ -67,24 +68,32 @@ const ReportPage = () => {
         <Summary>
           Get justice for your family today, report the crime...
         </Summary>
-        <div class="flex flex-wrap flex-col sm:flex-row -mx-4 sm:-mx-8">
-          <div class="w-full sm:w-1/2 lg:w-1/3 p-4 sm:px-8 sm:py-4">
-            <TextGroup id="name" name="Name" placeholder="Francis Adeboye" />
+        <div className="flex flex-wrap flex-col sm:flex-row -mx-4 sm:-mx-8">
+          <Divider>Victim's Details</Divider>
+
+          <div className="w-full sm:w-1/2 lg:w-1/4 p-4 sm:px-8 sm:py-4 xxl:py-6">
+            <TextGroup id="victim-name" name="Name" placeholder="Jimoh Isiaq" />
           </div>
 
-          <div class="w-full sm:w-1/2 lg:w-1/3 p-4 sm:px-8 sm:py-4">
-            <TextGroup id="telephone" name="Telephone" placeholder="+234" />
-          </div>
-
-          <div class="w-full sm:w-1/2 lg:w-1/3 p-4 sm:px-8 sm:py-4">
-            <EmailGroup
-              id="email"
-              name="E-mail Address"
-              placeholder="you@email.com"
+          <div className="w-full sm:w-1/2 lg:w-1/4 p-4 sm:px-8 sm:py-4 xxl:py-6">
+            <FileGroup
+              id="victim-photo"
+              name="Photo"
+              placeholder="Upload Photo"
             />
           </div>
 
-          <div class="w-full sm:w-1/2 lg:w-1/2 p-4 sm:px-8 sm:py-4">
+          <div className="w-full sm:w-1/2 lg:w-1/4 p-4 sm:px-8 sm:py-4 xxl:py-6">
+            <SelectGroup id="victim-sex" name="Sex" data={sex} />
+          </div>
+
+          <div className="w-full sm:w-1/2 lg:w-1/4 p-4 sm:px-8 sm:py-4 xxl:py-6">
+            <NumberGroup id="victim-age" name="Age" placeholder="28" />
+          </div>
+
+          <Divider>Offence Details</Divider>
+
+          <div className="w-full sm:w-1/2 lg:w-1/2 p-4 sm:px-8 sm:py-4 xxl:py-6">
             <TextGroup
               id="offender"
               name="Offender"
@@ -92,7 +101,7 @@ const ReportPage = () => {
             />
           </div>
 
-          <div class="w-full sm:w-1/2 lg:w-1/2 p-4 sm:px-8 sm:py-4">
+          <div className="w-full sm:w-1/2 lg:w-1/2 p-4 sm:px-8 sm:py-4 xxl:py-6">
             <SelectGroup
               id="offence"
               name="Crime(s) Committed by Offender"
@@ -100,15 +109,15 @@ const ReportPage = () => {
             />
           </div>
 
-          <div class="w-full sm:w-1/2 lg:w-1/3 p-4 sm:px-8 sm:py-4">
+          <div className="w-full sm:w-1/2 lg:w-1/3 p-4 sm:px-8 sm:py-4 xxl:py-6">
             <TextGroup
               id="offence-place"
               name="Where (Place of Incidence)"
-              placeholder="CSP James Nwafor"
+              placeholder="No. 1 Bode Thomas, Surulere, Lagos"
             />
           </div>
 
-          <div class="w-full sm:w-1/2 lg:w-1/3 p-4 sm:px-8 sm:py-4">
+          <div className="w-full sm:w-1/2 lg:w-1/3 p-4 sm:px-8 sm:py-4 xxl:py-6">
             <SelectGroup
               id="offence-state"
               name="State of Incidence"
@@ -116,75 +125,19 @@ const ReportPage = () => {
             />
           </div>
 
-          <div class="w-full sm:w-1/2 lg:w-1/3 p-4 sm:px-8 sm:py-4">
+          <div className="w-full sm:w-1/2 lg:w-1/3 p-4 sm:px-8 sm:py-4 xxl:py-6">
             <DateGroup id="offence-date" name="When (Date of Incidence)" />
           </div>
 
-          <div class="w-full sm:w-1/2 lg:w-1/4 p-4 sm:px-8 sm:py-4">
-            <TextGroup
-              id="victim-name"
-              name="Victim's Name"
-              placeholder="Jimoh Isiaq"
-            />
-          </div>
-
-          <div class="w-full sm:w-1/2 lg:w-1/4 p-4 sm:px-8 sm:py-4">
-            <FileGroup
-              id="victim-photo"
-              name="Victim's Photo"
-              placeholder="Upload Photo"
-            />
-          </div>
-
-          <div class="w-full sm:w-1/2 lg:w-1/4 p-4 sm:px-8 sm:py-4">
-            <SelectGroup id="victim-sex" name="Victim's Sex" data={sex} />
-          </div>
-
-          <div class="w-full sm:w-1/2 lg:w-1/4 p-4 sm:px-8 sm:py-4">
-            <NumberGroup id="victim-age" name="Victim's Age" placeholder="28" />
-          </div>
-
-          <div class="w-full p-4 sm:px-8 sm:py-4">
+          <div className="w-full p-4 sm:px-8 sm:py-4 xxl:py-6">
             <MultiLineGroup
               id="description"
               name="Describe Offence"
               placeholder="Please describe offence in detail"
             />
           </div>
-
-          <div class="w-full sm:w-1/2 lg:w-1/4 p-4 sm:px-8 sm:py-4">
-            <SelectGroup
-              id="reported"
-              name="Was this offence reported?"
-              data={boolean}
-            />
-          </div>
-
-          <div class="w-full sm:w-1/2 lg:w-1/4 p-4 sm:px-8 sm:py-4">
-            <TextGroup
-              id="reported-who"
-              name="If Yes, who was it reported to?"
-              placeholder="CSP Idris Abubakar"
-            />
-          </div>
-
-          <div class="w-full sm:w-1/2 lg:w-1/4 p-4 sm:px-8 sm:py-4">
-            <DateGroup
-              id="reported-date"
-              name="If Yes, when was it reported?"
-            />
-          </div>
-
-          <div class="w-full sm:w-1/2 lg:w-1/4 p-4 sm:px-8 sm:py-4">
-            <TextGroup
-              id="reported-where"
-              name="If Yes, where was it reported?"
-              placeholder="Police Headquarters, Abuja"
-            />
-          </div>
-
-          <div class="w-full flex flex-row">
-            <div class="w-3/5 lg:w-1/4 p-4 sm:px-8 sm:py-4">
+          <div className="w-full flex flex-row">
+            <div className="w-3/5 lg:w-1/4 p-4 sm:px-8 sm:py-4 xxl:py-6">
               <TextGroup
                 id="evidence"
                 name="Attach Evidence"
@@ -192,24 +145,75 @@ const ReportPage = () => {
               />
             </div>
 
-            <div class="w-2/5 lg:w-1/4 p-4 sm:px-8 sm:py-4">
-              <div class="font-medium">&nbsp;</div>
+            <div className="w-2/5 lg:w-1/4 p-4 sm:px-8 sm:py-4 xxl:py-6">
+              <div className="font-medium">&nbsp;</div>
               <button
                 id="attach"
-                class="w-full bg-theme block rounded-lg mt-3 px-6 py-4 text-white text-left tracking-tighter font-medium"
+                className="w-full bg-theme block rounded-lg mt-3 px-6 py-4 text-white text-left tracking-tighter font-medium"
               >
-                <span class="hidden sm:inline">Add More Evidence</span>
-                <span class="sm:hidden">Add</span>
-                <div class="float-right">
+                <span className="hidden sm:inline">Add More Evidence</span>
+                <span className="sm:hidden">Add</span>
+                <div className="float-right">
                   <ArrowIcon />
                 </div>
               </button>
             </div>
           </div>
 
-          <div class="w-full"></div>
+          <Divider>Report Details</Divider>
 
-          <div class="w-full sm:w-1/2 lg:w-1/2 p-4 sm:px-8 sm:py-4">
+          <div className="w-full sm:w-1/2 lg:w-1/4 p-4 sm:px-8 sm:py-4 xxl:py-6">
+            <SelectGroup
+              id="reported"
+              name="Was this offence reported?"
+              data={boolean}
+            />
+          </div>
+
+          <div className="w-full sm:w-1/2 lg:w-1/4 p-4 sm:px-8 sm:py-4 xxl:py-6">
+            <TextGroup
+              id="reported-who"
+              name="If Yes, who was it reported to?"
+              placeholder="CSP Idris Abubakar"
+            />
+          </div>
+
+          <div className="w-full sm:w-1/2 lg:w-1/4 p-4 sm:px-8 sm:py-4 xxl:py-6">
+            <DateGroup
+              id="reported-date"
+              name="If Yes, when was it reported?"
+            />
+          </div>
+
+          <div className="w-full sm:w-1/2 lg:w-1/4 p-4 sm:px-8 sm:py-4 xxl:py-6">
+            <TextGroup
+              id="reported-where"
+              name="If Yes, where was it reported?"
+              placeholder="Police Headquarters, Abuja"
+            />
+          </div>
+
+          <Divider>Personal Details</Divider>
+
+          <div className="w-full sm:w-1/2 lg:w-1/3 p-4 sm:px-8 sm:py-4 xxl:py-6">
+            <TextGroup id="name" name="Name" placeholder="Francis Adeboye" />
+          </div>
+
+          <div className="w-full sm:w-1/2 lg:w-1/3 p-4 sm:px-8 sm:py-4 xxl:py-6">
+            <TextGroup id="telephone" name="Telephone" placeholder="+234" />
+          </div>
+
+          <div className="w-full sm:w-1/2 lg:w-1/3 p-4 sm:px-8 sm:py-4 xxl:py-6">
+            <EmailGroup
+              id="email"
+              name="E-mail Address"
+              placeholder="you@email.com"
+            />
+          </div>
+
+          <div className="w-full"></div>
+
+          <div className="w-full sm:w-1/2 lg:w-1/2 p-4 sm:px-8 sm:py-4 xxl:py-6">
             <SelectGroup
               id="certify"
               name="Do you certify that the information you have presented is correct?"
@@ -217,7 +221,7 @@ const ReportPage = () => {
             />
           </div>
 
-          <div class="w-full sm:w-1/2 lg:w-1/2 p-4 sm:px-8 sm:py-4">
+          <div className="w-full sm:w-1/2 lg:w-1/2 p-4 sm:px-8 sm:py-4 xxl:py-6">
             <SelectGroup
               id="relationship"
               name="Victim's Relationship to you"
@@ -225,7 +229,7 @@ const ReportPage = () => {
             />
           </div>
 
-          <div class="w-full sm:w-1/2 lg:w-1/4 p-4 sm:px-8 sm:py-4">
+          <div className="w-full sm:w-1/2 lg:w-1/4 p-4 sm:px-8 sm:py-4">
             <Button>Report Crime</Button>
           </div>
         </div>
