@@ -3,7 +3,7 @@ import React from "react"
 const Number = ({ id, placeholder }) => {
   return (
     <input
-      class="w-full bg-primary text-secondary mt-3 p-4 rounded-lg tracking-tighter"
+      className="w-full bg-primary text-secondary mt-3 p-4 rounded-lg tracking-tighter theme-input"
       type="number"
       placeholder={placeholder}
       id={id}
