@@ -26,7 +26,7 @@ select {
 body {
   font: 1.125rem "DM Sans", Arial;
   color: rgba(0, 0, 0, 0.9);
-  letter-spacing: -0.06em;
+  letter-spacing: -0.05em;
 }
 
 .theme-hero {
@@ -46,6 +46,10 @@ body {
   background-repeat: no-repeat;
 }
 
+.theme-input::placeholder {
+  color: #999999;
+}
+
 .theme-nav {
   transition: left 0.3s;
   left: 50px;
@@ -57,6 +61,25 @@ body {
 
 .theme-nav-close {
   left: -75%;
+}
+
+.theme-icon {
+  top: 0;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.theme-file {
+  opacity: 0;
+  overflow: hidden;
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 1028px) {
