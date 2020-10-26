@@ -1,6 +1,7 @@
 import React from "react"
-import Layout from "../layout/layout"
 import Link from "gatsby-link"
+import Layout from "../layout/layout"
+import ArrowIcon from "../components/icons/arrow-icon"
 
 const HomePage = () => {
   return (
@@ -30,15 +31,7 @@ const HomePage = () => {
               >
                 <span>Report Crime</span>
                 <div className="float-right">
-                  <svg
-                    width="24"
-                    height="24"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    clip-rule="evenodd"
-                  >
-                    <path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
-                  </svg>
+                  <ArrowIcon />
                 </div>
               </Link>
             </div>
@@ -57,15 +50,7 @@ const HomePage = () => {
               >
                 <span>See All Crimes</span>
                 <div className="float-right">
-                  <svg
-                    width="24"
-                    height="24"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    clip-rule="evenodd"
-                  >
-                    <path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
-                  </svg>
+                  <ArrowIcon />
                 </div>
               </Link>
             </div>
