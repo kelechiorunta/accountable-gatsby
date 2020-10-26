@@ -5,7 +5,7 @@ import ArrowIcon from "../../components/icons/arrow-icon"
 const GetStartedButton = () => {
   return (
     <Link
-      className="bg-theme rounded-lg px-6 py-3 text-white font-medium hidden lg:inline-block absolute right-0 mr-10 w-48"
+      className="bg-theme rounded-lg px-6 py-3 text-white font-medium hidden lg:inline-block absolute right-0 mr-10 xxl:mr-40 w-48"
       to="/get-started"
     >
       <span>Get Started</span>
