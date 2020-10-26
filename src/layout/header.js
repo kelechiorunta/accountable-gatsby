@@ -20,7 +20,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="px-6 sm:px-10 py-4 lg:py-12 flex flex-wrap items-center absolute w-full z-20">
+      <header className="px-6 sm:px-10 py-4 lg:py-12 xxl:py-16 xxl:px-40 flex flex-wrap items-center absolute w-full z-20">
         <Logo />
         <Navigation toggleClass={toggleClass} />
         <GetStartedButton />
