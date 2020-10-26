@@ -1,8 +1,8 @@
 import React, { useState } from "react"
-import GetStartedButton from "../components/get-started-button"
-import Logo from "../components/logo"
-import Navigation from "../components/navigation"
-import Toggle from "../components/toggle"
+import GetStartedButton from "../components/header/get-started-button"
+import Logo from "../components/header/logo"
+import Navigation from "../components/header/navigation"
+import Toggle from "../components/header/toggle"
 
 const Header = () => {
   const [toggleState, setToggleState] = useState(true)
