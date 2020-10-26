@@ -12,6 +12,13 @@ html {
   height: 100%;
 }
 
+select {
+  appearance: none;
+  -o-appearance: none;
+  -webkit-apperance: none;
+  -moz-appearance: none;
+}
+
 #gatsby-focus-wrapper {
   height: 100vh !important;
 }
