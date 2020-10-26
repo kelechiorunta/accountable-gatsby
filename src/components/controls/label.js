@@ -2,7 +2,7 @@ import React from "react"
 
 const Label = props => {
   return (
-    <label class="font-medium" for={props.for}>
+    <label className="font-medium" for={props.for}>
       {props.children}
     </label>
   )
