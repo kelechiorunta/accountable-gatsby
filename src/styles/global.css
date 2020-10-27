@@ -1,6 +1,5 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
 
 * {
   -webkit-font-smoothing: antialiased;
@@ -12,6 +11,8 @@ html {
   height: 100%;
 }
 
+input,
+textarea,
 select {
   appearance: none;
   -o-appearance: none;
@@ -87,3 +88,5 @@ body {
     left: auto;
   }
 }
+
+@tailwind utilities;
