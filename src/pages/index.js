@@ -1,17 +1,18 @@
 import React from "react"
 import Link from "gatsby-link"
 import Layout from "../layout/layout"
+
 import ArrowIcon from "../components/icons/arrow-icon"
 
 const HomePage = () => {
   return (
     <Layout>
-      <main className="theme-hero flex h-full items-center px-6 sm:px-12 lg:px-32 xxl:px-40 z-0">
+      <main className="theme-hero flex h-full items-center px-6 sm:px-10 xl:px-20 xxl:px-40 z-0">
         <div className="w-full md:w-9/12 lg:w-9/12 xl:w-8/12 xxl:w-7/12 z-10">
-          <h1 className="text-theme mb-2 text-3xl sm:text-5xl xxl:text-6xl font-medium leading-none tracking-tightest">
+          <h1 className="text-theme mb-2 text-4xl sm:text-5xl xxl:text-6xl font-medium leading-none tracking-tightest">
             Accountable.org.ng
           </h1>
-          <h1 className="mb-8 text-gray-800 text-2xl sm:text-4xl xxl:text-6xl font-medium leading-tight tracking-tightest">
+          <h1 className="mb-8 text-gray-800 text-4xl sm:text-4xl xxl:text-6xl font-medium leading-tight tracking-tightest">
             Hold your government, politicians, institutions, public office
             holders & citizens accountable…
           </h1>
