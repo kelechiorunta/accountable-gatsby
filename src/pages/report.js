@@ -138,7 +138,7 @@ const ReportPage = () => {
           </div>
           <div className="w-full flex flex-row">
             <div className="w-3/5 lg:w-1/4 p-4 sm:px-8 sm:py-4 xxl:py-6">
-              <TextGroup
+              <FileGroup
                 id="evidence"
                 name="Attach Evidence"
                 placeholder="photo1.jpg"
