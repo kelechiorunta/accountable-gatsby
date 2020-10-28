@@ -105,6 +105,10 @@ const Crimes = () => {
             offender="CSP Gilbert Okon"
             crime="Manslaugther"
           />
+
+          <div className="w-full sm:w-1/2 lg:w-1/3 xxl:w-1/4 p-4 sm:px-8 sm:py-4">
+            <Button>Show More</Button>
+          </div>
         </div>
       </Container>
     </Layout>
