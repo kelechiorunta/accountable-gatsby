@@ -9,7 +9,7 @@ import SelectGroup from "../components/form-groups/select"
 import Caption from "../components/typography/caption"
 import Summary from "../components/typography/summary"
 
-import Record from "../components/cards/record"
+import Record from "../components/cards/"
 
 const offence = {
   theft: "Theft",
