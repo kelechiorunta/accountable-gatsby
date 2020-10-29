@@ -10,16 +10,16 @@ import Anchor from "../components/anchors"
 const Laws = () => {
   return (
     <Layout>
-      <Container>
+      <Container animation="theme-animate">
         <Caption>Download PDF</Caption>
         <Summary>Get access to all our laws. Download now!</Summary>
         <div className="flex flex-wrap flex-col sm:flex-row -mx-4 sm:-mx-8">
           <div className="w-full lg:w-1/2 p-4 sm:px-8 sm:py-4 xxl:py-8">
-            <div className="flex">
-              <div>
+            <div className="flex flex-col sm:flex-row text-center sm:text-left">
+              <div class="mb-5 sm:mb-0">
                 <LogoIcon />
               </div>
-              <div className="ml-8">
+              <div className="sm:ml-8">
                 <h1 className="text-theme text-3xl font-bold tracking-tightest mb-3">
                   The Nigerian Constitution
                 </h1>
@@ -34,11 +34,11 @@ const Laws = () => {
           </div>
 
           <div className="w-full lg:w-1/2 p-4 sm:px-8 sm:py-4 xxl:py-8">
-            <div className="flex">
-              <div>
+            <div className="flex flex-col sm:flex-row text-center sm:text-left">
+              <div class="mb-5 sm:mb-0">
                 <LogoIcon />
               </div>
-              <div className="ml-8">
+              <div className="sm:ml-8">
                 <h1 className="text-theme text-3xl font-bold tracking-tightest mb-3">
                   Police Act 2020
                 </h1>
