@@ -19,7 +19,7 @@ const offence = {
 const Crimes = () => {
   return (
     <Layout>
-      <Container>
+      <Container animation="theme-animate">
         <Caption>Crimes Database</Caption>
         <Summary>See all crimes as reported by Nigerians nationwide...</Summary>
         <div className="flex flex-wrap flex-col sm:flex-row -mx-4 sm:-mx-8">
@@ -33,7 +33,7 @@ const Crimes = () => {
 
           <div className="w-full sm:w-1/2 lg:w-1/3 p-4 sm:px-8 sm:py-4 xxl:py-8">
             <div className="w-full hidden lg:inline-block mt-3">&nbsp;</div>
-            <Button id="search">Report Crime</Button>
+            <Button id="search">Search Crimes</Button>
           </div>
 
           <div className="w-full"></div>
