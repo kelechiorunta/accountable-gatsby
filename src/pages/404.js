@@ -7,7 +7,7 @@ import Layout from "../layout/layout"
 const ErrorPage = () => {
   return (
     <Layout>
-      <Container>
+      <Container animation="theme-animate">
         <Caption>Error!</Caption>
         <Summary>
           The page you're trying to view is unfortunately not available...
