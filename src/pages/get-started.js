@@ -9,7 +9,7 @@ import Layout from "../layout/layout"
 const GetStarted = () => {
   return (
     <Layout>
-      <main className="w-full sm:w-4/5 lg:w-1/2 xxl:w-1/3 mx-auto px-6 sm:px-10 pt-32 sm:pt-40 pb-16">
+      <main className="w-full sm:w-4/5 lg:w-1/2 xxl:w-1/3 mx-auto px-6 sm:px-10 pt-32 sm:pt-40 pb-16 theme-animate">
         <h1 className="text-theme text-4xl xxl:text-5xl font-medium leading-tight tracking-tightest">
           Get Started
         </h1>
