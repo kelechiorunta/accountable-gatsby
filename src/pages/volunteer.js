@@ -25,13 +25,13 @@ const profession = {
 const Volunteer = () => {
   return (
     <Layout>
-      <Container>
+      <Container animation="theme-animate">
         <Caption>Join Us</Caption>
         <Summary>Lend your support in any way you can.</Summary>
-        <div className="flex flex-wrap flex-col sm:flex-row -mx-4 sm:-mx-8">
+        <div className="flex flex-wrap flex-col sm:flex-row -mx-4">
           <Divider>Personal Details</Divider>
 
-          <div className="w-full sm:w-1/2 lg:w-1/3 p-4 sm:px-8 sm:py-4 xxl:py-6">
+          <div className="w-full sm:w-1/2 lg:w-1/3 p-4 sm:py-4 xxl:py-6">
             <TextGroup
               id="volunteer-name"
               name="Name"
@@ -39,7 +39,7 @@ const Volunteer = () => {
             />
           </div>
 
-          <div className="w-full sm:w-1/2 lg:w-1/3 p-4 sm:px-8 sm:py-4 xxl:py-6">
+          <div className="w-full sm:w-1/2 lg:w-1/3 p-4 sm:py-4 xxl:py-6">
             <TextGroup
               id="volunteer-mobile"
               name="Telephone"
@@ -47,7 +47,7 @@ const Volunteer = () => {
             />
           </div>
 
-          <div className="w-full sm:w-1/2 lg:w-1/3 p-4 sm:px-8 sm:py-4 xxl:py-6">
+          <div className="w-full sm:w-1/2 lg:w-1/3 p-4 sm:py-4 xxl:py-6">
             <EmailGroup
               id="volunteer-email"
               name="E-mail Address"
@@ -55,7 +55,7 @@ const Volunteer = () => {
             />
           </div>
 
-          <div className="w-full sm:w-1/2 p-4 sm:px-8 sm:py-4 xxl:py-4">
+          <div className="w-full sm:w-1/2 p-4 sm:py-4 xxl:py-4">
             <SelectGroup
               id="volunteer-profession"
               name="Volunteer As"
@@ -65,7 +65,7 @@ const Volunteer = () => {
 
           <div className="w-full"></div>
 
-          <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 p-4 sm:px-8 py-10">
+          <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 p-4 py-10">
             <Button>Volunteer Now</Button>
           </div>
         </div>
