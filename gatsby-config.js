@@ -6,6 +6,7 @@ module.exports = {
     siteUrl: `https://accountable.org.ng`,
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-postcss`,
     {
       resolve: `gatsby-plugin-google-fonts`,
