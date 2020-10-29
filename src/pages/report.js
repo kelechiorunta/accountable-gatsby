@@ -63,19 +63,19 @@ const states = {
 const ReportPage = () => {
   return (
     <Layout>
-      <Container>
+      <Container animation="theme-animate">
         <Caption>Report Crime</Caption>
         <Summary>
           Get justice for your family today, report the crime...
         </Summary>
-        <div className="flex flex-wrap flex-col sm:flex-row -mx-4 sm:-mx-8">
+        <div className="flex flex-wrap flex-col sm:flex-row -mx-4">
           <Divider>Victim's Details</Divider>
 
-          <div className="w-full sm:w-1/2 lg:w-1/4 p-4 sm:px-8 sm:py-4 xxl:py-6">
+          <div className="w-full sm:w-1/2 lg:w-1/4 p-4 sm:py-4 xxl:py-6">
             <TextGroup id="victim-name" name="Name" placeholder="Jimoh Isiaq" />
           </div>
 
-          <div className="w-full sm:w-1/2 lg:w-1/4 p-4 sm:px-8 sm:py-4 xxl:py-6">
+          <div className="w-full sm:w-1/2 lg:w-1/4 p-4 sm:py-4 xxl:py-6">
             <FileGroup
               id="victim-photo"
               name="Photo"
@@ -83,17 +83,17 @@ const ReportPage = () => {
             />
           </div>
 
-          <div className="w-full sm:w-1/2 lg:w-1/4 p-4 sm:px-8 sm:py-4 xxl:py-6">
+          <div className="w-full sm:w-1/2 lg:w-1/4 p-4 sm:py-4 xxl:py-6">
             <SelectGroup id="victim-sex" name="Sex" data={sex} />
           </div>
 
-          <div className="w-full sm:w-1/2 lg:w-1/4 p-4 sm:px-8 sm:py-4 xxl:py-6">
+          <div className="w-full sm:w-1/2 lg:w-1/4 p-4 sm:py-4 xxl:py-6">
             <NumberGroup id="victim-age" name="Age" placeholder="28" />
           </div>
 
           <Divider>Offence Details</Divider>
 
-          <div className="w-full sm:w-1/2 lg:w-1/2 p-4 sm:px-8 sm:py-4 xxl:py-6">
+          <div className="w-full sm:w-1/2 lg:w-1/2 p-4 sm:py-4 xxl:py-6">
             <TextGroup
               id="offender"
               name="Offender"
@@ -101,7 +101,7 @@ const ReportPage = () => {
             />
           </div>
 
-          <div className="w-full sm:w-1/2 lg:w-1/2 p-4 sm:px-8 sm:py-4 xxl:py-6">
+          <div className="w-full sm:w-1/2 lg:w-1/2 p-4 sm:py-4 xxl:py-6">
             <SelectGroup
               id="offence"
               name="Crime(s) Committed by Offender"
@@ -109,7 +109,7 @@ const ReportPage = () => {
             />
           </div>
 
-          <div className="w-full sm:w-1/2 lg:w-1/3 p-4 sm:px-8 sm:py-4 xxl:py-6">
+          <div className="w-full sm:w-1/2 lg:w-1/3 p-4 sm:py-4 xxl:py-6">
             <TextGroup
               id="offence-place"
               name="Where (Place of Incidence)"
@@ -117,7 +117,7 @@ const ReportPage = () => {
             />
           </div>
 
-          <div className="w-full sm:w-1/2 lg:w-1/3 p-4 sm:px-8 sm:py-4 xxl:py-6">
+          <div className="w-full sm:w-1/2 lg:w-1/3 p-4 sm:py-4 xxl:py-6">
             <SelectGroup
               id="offence-state"
               name="State of Incidence"
@@ -125,11 +125,11 @@ const ReportPage = () => {
             />
           </div>
 
-          <div className="w-full sm:w-1/2 lg:w-1/3 p-4 sm:px-8 sm:py-4 xxl:py-6">
+          <div className="w-full sm:w-1/2 lg:w-1/3 p-4 sm:py-4 xxl:py-6">
             <DateGroup id="offence-date" name="When (Date of Incidence)" />
           </div>
 
-          <div className="w-full p-4 sm:px-8 sm:py-4 xxl:py-6">
+          <div className="w-full p-4 sm:py-4 xxl:py-6">
             <MultiLineGroup
               id="description"
               name="Describe Offence"
@@ -137,7 +137,7 @@ const ReportPage = () => {
             />
           </div>
           <div className="w-full flex flex-row">
-            <div className="w-3/5 lg:w-1/4 p-4 sm:px-8 sm:py-4 xxl:py-6">
+            <div className="w-3/5 lg:w-1/4 p-4 sm:py-4 xxl:py-6">
               <FileGroup
                 id="evidence"
                 name="Attach Evidence"
@@ -145,7 +145,7 @@ const ReportPage = () => {
               />
             </div>
 
-            <div className="w-2/5 lg:w-1/4 p-4 sm:px-8 sm:py-4 xxl:py-6">
+            <div className="w-2/5 lg:w-1/4 p-4 sm:py-4 xxl:py-6">
               <div className="font-medium">&nbsp;</div>
               <button
                 id="attach"
@@ -162,7 +162,7 @@ const ReportPage = () => {
 
           <Divider>Report Details</Divider>
 
-          <div className="w-full sm:w-1/2 lg:w-1/4 p-4 sm:px-8 sm:py-4 xxl:py-6">
+          <div className="w-full sm:w-1/2 lg:w-1/4 p-4 sm:py-4 xxl:py-6">
             <SelectGroup
               id="reported"
               name="Was this offence reported?"
@@ -170,7 +170,7 @@ const ReportPage = () => {
             />
           </div>
 
-          <div className="w-full sm:w-1/2 lg:w-1/4 p-4 sm:px-8 sm:py-4 xxl:py-6">
+          <div className="w-full sm:w-1/2 lg:w-1/4 p-4 sm:py-4 xxl:py-6">
             <TextGroup
               id="reported-who"
               name="If Yes, who was it reported to?"
@@ -178,14 +178,14 @@ const ReportPage = () => {
             />
           </div>
 
-          <div className="w-full sm:w-1/2 lg:w-1/4 p-4 sm:px-8 sm:py-4 xxl:py-6">
+          <div className="w-full sm:w-1/2 lg:w-1/4 p-4 sm:py-4 xxl:py-6">
             <DateGroup
               id="reported-date"
               name="If Yes, when was it reported?"
             />
           </div>
 
-          <div className="w-full sm:w-1/2 lg:w-1/4 p-4 sm:px-8 sm:py-4 xxl:py-6">
+          <div className="w-full sm:w-1/2 lg:w-1/4 p-4 sm:py-4 xxl:py-6">
             <TextGroup
               id="reported-where"
               name="If Yes, where was it reported?"
@@ -195,15 +195,15 @@ const ReportPage = () => {
 
           <Divider>Personal Details</Divider>
 
-          <div className="w-full sm:w-1/2 lg:w-1/3 p-4 sm:px-8 sm:py-4 xxl:py-6">
+          <div className="w-full sm:w-1/2 lg:w-1/3 p-4 sm:py-4 xxl:py-6">
             <TextGroup id="name" name="Name" placeholder="Francis Adeboye" />
           </div>
 
-          <div className="w-full sm:w-1/2 lg:w-1/3 p-4 sm:px-8 sm:py-4 xxl:py-6">
+          <div className="w-full sm:w-1/2 lg:w-1/3 p-4 sm:py-4 xxl:py-6">
             <TextGroup id="telephone" name="Telephone" placeholder="+234" />
           </div>
 
-          <div className="w-full sm:w-1/2 lg:w-1/3 p-4 sm:px-8 sm:py-4 xxl:py-6">
+          <div className="w-full sm:w-1/2 lg:w-1/3 p-4 sm:py-4 xxl:py-6">
             <EmailGroup
               id="email"
               name="E-mail Address"
@@ -213,7 +213,7 @@ const ReportPage = () => {
 
           <div className="w-full"></div>
 
-          <div className="w-full sm:w-1/2 lg:w-1/2 p-4 sm:px-8 sm:py-4 xxl:py-6">
+          <div className="w-full sm:w-1/2 lg:w-1/2 p-4 sm:py-4 xxl:py-6">
             <SelectGroup
               id="certify"
               name="Do you certify that the information you have presented is correct?"
@@ -221,7 +221,7 @@ const ReportPage = () => {
             />
           </div>
 
-          <div className="w-full sm:w-1/2 lg:w-1/2 p-4 sm:px-8 sm:py-4 xxl:py-6">
+          <div className="w-full sm:w-1/2 lg:w-1/2 p-4 sm:py-4 xxl:py-6">
             <SelectGroup
               id="relationship"
               name="Victim's Relationship to you"
@@ -229,7 +229,7 @@ const ReportPage = () => {
             />
           </div>
 
-          <div className="w-full sm:w-1/2 lg:w-1/4 p-4 sm:px-8 sm:py-4">
+          <div className="w-full sm:w-1/2 lg:w-1/4 p-4 sm:py-4">
             <Button>Report Crime</Button>
           </div>
         </div>
