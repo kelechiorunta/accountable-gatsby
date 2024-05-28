@@ -12,7 +12,7 @@ const HomePage = () => {
           <h1 className="text-theme mb-2 text-4xl sm:text-5xl xxl:text-6xl font-medium leading-none tracking-tightest">
             Accountable.org.ng
           </h1>
-          <h1 className="mb-8 text-gray-800 text-3xl sm:text-4xl xxl:text-6xl font-medium leading-tight tracking-tightest">
+          <h1 className="mt-20 mb-8 w-96 text-gray-800 text-2xl sm:text-4xl xxl:text-3xl font-medium leading-tight tracking-tightest">
             Hold your government, politicians, institutions, public office
             holders & citizens accountable…
           </h1>
